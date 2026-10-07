@@ -1,0 +1,17 @@
+[
+ {"id":1,"keyword":"vpn","category":"Network","subcategory":"VPN","priority":2,"group":"Network Team","active":true},
+ {"id":2,"keyword":"wifi","category":"Network","subcategory":"Wi-Fi","priority":3,"group":"Network Team","active":true},
+ {"id":3,"keyword":"internet","category":"Network","subcategory":"Connectivity","priority":3,"group":"Network Team","active":true},
+ {"id":4,"keyword":"password","category":"Access","subcategory":"Password Reset","priority":3,"group":"IAM Team","active":true},
+ {"id":5,"keyword":"locked out","category":"Access","subcategory":"Account Lockout","priority":2,"group":"IAM Team","active":true},
+ {"id":6,"keyword":"login","category":"Access","subcategory":"Authentication","priority":3,"group":"IAM Team","active":true},
+ {"id":7,"keyword":"printer","category":"Hardware","subcategory":"Printer","priority":4,"group":"Desktop Support","active":true},
+ {"id":8,"keyword":"laptop","category":"Hardware","subcategory":"Laptop","priority":3,"group":"Desktop Support","active":true},
+ {"id":9,"keyword":"keyboard","category":"Hardware","subcategory":"Peripherals","priority":4,"group":"Desktop Support","active":true},
+ {"id":10,"keyword":"outlook","category":"Software","subcategory":"Email","priority":3,"group":"Application Support","active":true},
+ {"id":11,"keyword":"install","category":"Software","subcategory":"Installation","priority":4,"group":"Application Support","active":true},
+ {"id":12,"keyword":"server down","category":"Infrastructure","subcategory":"Server","priority":1,"group":"Infrastructure Team","active":true},
+ {"id":13,"keyword":"database","category":"Infrastructure","subcategory":"Database","priority":2,"group":"DBA Team","active":true},
+ {"id":14,"keyword":"phishing","category":"Security","subcategory":"Phishing","priority":1,"group":"Security Team","active":true},
+ {"id":15,"keyword":"virus","category":"Security","subcategory":"Malware","priority":1,"group":"Security Team","active":true}
+]

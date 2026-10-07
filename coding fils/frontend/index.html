@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AutoTicket - Auto Ticket Classification</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="brand"><b>AutoTicket</b><span id="mode" class="mode"></span></div>
+  <nav id="tabs">
+    <button data-tab="raise" class="on">Raise ticket</button>
+    <button data-tab="tickets">Tickets</button>
+    <button data-tab="dash">Dashboard</button>
+    <button data-tab="rules">Rules</button>
+  </nav>
+</header>
+<main>
+  <section id="raise" class="tab on">
+    <h1>Tell us what's wrong</h1>
+    <p class="sub">We read your description and route it to the right team instantly.</p>
+    <div class="split">
+      <form id="f">
+        <label>Your name<input name="caller" placeholder="Priya Raman"></label>
+        <label>What's the issue?<input name="short_description" required placeholder="VPN keeps disconnecting"></label>
+        <label>Details<textarea name="description" rows="5" placeholder="When did it start? Any error message?"></textarea></label>
+        <label>How urgent is it?
+          <select name="urgency"><option value="low">Low - can wait</option><option value="medium" selected>Medium - slowing me down</option><option value="high">High - I can't work</option></select>
+        </label>
+        <button class="primary" type="submit">Submit ticket</button>
+      </form>
+      <aside id="slip" class="slip"></aside>
+    </div>
+  </section>
+  <section id="tickets" class="tab"><h1>Tickets</h1><div id="tlist"></div></section>
+  <section id="dash" class="tab"><h1>Dashboard</h1><div id="stats"></div></section>
+  <section id="rules" class="tab">
+    <h1>Classification rules</h1>
+    <p class="sub">A ticket matching a keyword gets that category, priority and team. Changes apply immediately.</p>
+    <form id="rf" class="rform">
+      <input name="keyword" placeholder="Keyword" required><input name="category" placeholder="Category" required>
+      <input name="subcategory" placeholder="Subcategory"><input name="group" placeholder="Assignment group" required>
+      <select name="priority"><option value="1">P1</option><option value="2">P2</option><option value="3" selected>P3</option><option value="4">P4</option></select>
+      <button class="primary">Add rule</button>
+    </form>
+    <div id="rlist"></div>
+  </section>
+</main>
+<div id="toast" role="status"></div>
+<script src="app.js"></script>
+</body>
+</html>
